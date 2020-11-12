@@ -1,0 +1,15 @@
+version = 1
+
+test_patterns = ["**/__tests__/**/*.js"]
+
+exclude_patterns = [
+    "node_modules",
+    "dist"
+]
+
+[[analyzers]]
+name = "javascript"
+enabled = true
+
+  [analyzers.meta]
+  environment = ["jest"]
